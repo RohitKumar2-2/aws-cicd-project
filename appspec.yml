@@ -3,10 +3,10 @@ os: linux
 
 hooks:
   ApplicationStop:
-    - location: stop_container1.sh
+    - location:  /opt/codedeploy-agent/deployment-root/69ffd709-7baf-4015-905d-b082483403de/d-LJ9VTY682/deployment-archive/stop_container1.sh
       timeout: 300
       runas: root
   AfterInstall:
-    - location: start_container1.sh
+    - location:  /opt/codedeploy-agent/deployment-root/69ffd709-7baf-4015-905d-b082483403de/d-LJ9VTY682/deployment-archive/stop_container1.sh
       timeout: 300
       runas: root
